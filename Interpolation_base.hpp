@@ -1,6 +1,7 @@
 #ifndef InterpolationBase_head
 #define InterpolationBase_head
 
+#include<iostream>
 #include<cmath>
 #include<vector>
 
