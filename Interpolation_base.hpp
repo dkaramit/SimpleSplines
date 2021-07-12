@@ -1,7 +1,6 @@
 #ifndef InterpolationBase_head
 #define InterpolationBase_head
 
-#include<iostream>
 #include<cmath>
 #include<vector>
 
@@ -88,9 +87,7 @@ class Interpolation{
         un_int i=bSearch(x);
         return ( (*Y)[i]-(*Y)[i+1])/((*X)[i]-(*X)[i+1]);
     }
-    virtual LD derivative_2(LD x){
-        return 0;
-    }
+    virtual LD derivative_2(LD x)=0;
 
 };
 
