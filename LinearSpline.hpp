@@ -44,6 +44,9 @@ class LinearSpline: public Interpolation<LD>{
         return a*dydx0+(1-a)*dydx1;
     }
 
+    virtual LD derivative_2(LD x){return 0;}
+     
+
 
 
 };
